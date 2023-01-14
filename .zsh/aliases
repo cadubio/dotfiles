@@ -1,0 +1,12 @@
+
+alias config='/usr/bin/git --git-dir=/home/cadu/.cfg/.git/ --work-tree=/home/cadu'
+#alias ls='ls --color=auto'
+#alias wifi-menu='sudo wifi-menu -o'
+alias sxiv='sxiv.fork'
+alias rm='rm -i'
+#alias ranger='xterm -e ranger'
+alias extract="/usr/bin/extract"
+alias multibootusb='xfsudo multibootusb'
+alias auracle="auracle -C /tmp"
+#alias rstudio="env QT_QPA_PLATFORM=xcb rstudio"
+
