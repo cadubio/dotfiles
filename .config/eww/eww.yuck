@@ -44,6 +44,8 @@
 (defpoll updates_total :interval "30m" "scripts/./updates --TOTAL")
 (defpoll updates_aur :interval "30m" "scripts/./updates --AUR")
 
+(defpoll estado :interval "1m" "$HOME/.local/bin/.bateriaCritica.sh")
+
 ;; widgets
 
 (defwidget wifi []
@@ -479,6 +481,7 @@
   (menu_desliga)
 )
 
+
 (defwidget batCritica [bateria]    
   (box :class "aviso" :orientation "v" :space-evenly "false" 
     (button :class "bto_batCritica_fechar" :onclick "${EWW_CMD} close bat_critica" "×")
@@ -513,5 +516,3 @@
   )
   (batCritica :bateria {EWW_BATTERY.BAT1.capacity})
 )
-
-

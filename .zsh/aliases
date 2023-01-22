@@ -1,5 +1,5 @@
 
-alias config='/usr/bin/git --git-dir=/home/cadu/.cfg/.git/ --work-tree=/home/cadu'
+alias config='/usr/bin/git --git-dir=/home/cadu/.cfg/ --work-tree=/home/cadu'
 #alias ls='ls --color=auto'
 #alias wifi-menu='sudo wifi-menu -o'
 alias sxiv='sxiv.fork'

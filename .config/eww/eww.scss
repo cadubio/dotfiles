@@ -654,6 +654,16 @@ calendar:indeterminate {
   color: #bbc5d7;
 }
 
+.system-btn-off {
+  margin-left: 8px;
+  color: #a1bdce;
+}
+
+.system-btn-on {
+  color: #e94f4f;
+  margin-left: 8px;
+}
+
 .aviso {
   border: 3px solid #77a5bf;
   border-radius: 12px;
@@ -672,14 +682,4 @@ calendar:indeterminate {
 
 .txt_nivel_critico {
   margin-left: 20px;
-}
-
-.system-btn-off {
-  margin-left: 8px;
-  color: #a1bdce;
-}
-
-.system-btn-on {
-  color: #e94f4f;
-  margin-left: 8px;
 }
