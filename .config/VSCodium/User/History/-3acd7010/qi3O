@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+updates_arch=$(checkupdates 2> /dev/null | wc -l );
+[ -z "$updates_arch" ] && updates_arch=0
+
+updates_aur=$(auracle outdated 2> /dev/null | wc -l)
+[ -z "$updates_aur" ] && updates_aur=0
+
+updates=$((updates_arch + updates_aur))
+echo "$updates"
+
+if [[ "$1" == "--ARCH" ]]; then
+    echo $updates_arch	
+elif [[ "$1" == "--AUR" ]]; then
+	echo $updates_aur
+elif [[ "$1" == "--TOTAL" ]]; then
+	echo $updates
+fi
+
+#[ "$updates" -gt 0 ] && echo "$updates" || echo "A"

@@ -1,0 +1,36 @@
+(defvar eww "/usr/bin/eww -c $HOME/.config/eww/bat")
+
+(defwidget batCritica [bateria]    
+    (box :class "aviso" :orientation "v" :space-evenly "false" 
+      (button :class "bto_batCritica_fechar" :onclick "${eww} close bat_critica" "×")
+      (label :text "ATENÇÃO !!!")
+      (box :class "batCritica_icone" :orientation "h" :space-evenly "false" 
+           :halign "center" 
+           :valign "baseline"
+        (circular-progress :value bateria
+          :class "sys_bat"
+          :thickness 9
+          (label
+            :text ""
+            :class "sys_icon_bat"
+            :limit-width 2
+            :wrap "false"
+          )
+        )
+        (label :class "txt_nivel_critico" :text "nível crítico ${bateria}%")
+      )
+      (label :text "Conecte o Carregador !!!")
+    )
+  )
+  
+  (defwindow bat_critica 
+    :monitor 0
+    :geometry (geometry
+      :x "0px"
+      :y "0px"
+      :anchor "center center"
+      :width "400px"
+      :height "200px"
+    )
+    (batCritica :bateria {EWW_BATTERY.BAT1.capacity})
+  )

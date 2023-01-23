@@ -1,0 +1,55 @@
+{
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Presentations",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "Viewer"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": true
+    },
+    "auto_detect_indentation": true,
+    "show_margin": false,
+    "show_diagnostics_other": true,
+    "default_encoding": "UTF-8",
+    "default_project_location": "~/projetos_R/ecodatageo/desmatamento",
+    "pdf_previewer": "rstudio",
+    "spelling_dictionary_language": "pt_BR",
+    "wrap_tab_navigation": false,
+    "save_workspace": "never",
+    "always_save_history": false,
+    "reuse_sessions_for_project_links": true,
+    "restore_source_documents": false,
+    "load_workspace": false,
+    "initial_working_directory": "~/projetos_R",
+    "restore_last_project": false,
+    "posix_terminal_shell": "zsh",
+    "editor_theme": "Merbivore",
+    "document_author": "Carlos Eduardo de Siqueira",
+    "insert_native_pipe_operator": true,
+    "rainbow_parentheses": true,
+    "jobs_tab_visibility": "shown",
+    "show_terminal_tab": false,
+    "continue_comments_on_newline": true,
+    "spelling_custom_dictionaries": [
+        "pt_BR"
+    ],
+    "font_size_points": 12
+}

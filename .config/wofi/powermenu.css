@@ -1,0 +1,29 @@
+window {
+    background-color: #0E1016;
+    color: #C7C9D1;
+    font-size: 30px;
+    font-family: "Iosevka";
+}
+
+#entry:nth-child(odd) {
+    background-color: #0E1016;
+}
+
+#entry:nth-child(even) {
+    background-color: #161822;
+}
+
+#entry:selected {
+    background-color: #414758;
+}
+
+#input {
+    background-color: #161822;
+    color: #828597;
+    border-color: #414758;
+    border-radius: 0px;
+}
+
+#input:focus {
+    border-color: #EBCA89;
+}

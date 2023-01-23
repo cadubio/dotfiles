@@ -1,0 +1,11 @@
+
+* {
+
+    background-color: beige;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

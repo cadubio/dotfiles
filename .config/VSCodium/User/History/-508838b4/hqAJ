@@ -1,0 +1,30 @@
+#
+# Default config for sway
+#
+
+exec_always systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
+exec systemd-cat --stderr-priority=warning --identifier=gammastep gammastep
+exec wl-paste -t text --watch clipman store
+exec dunst
+exec env QT_QPA_PLATFORM=xcb megasync
+exec ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WebRTCPipeWireCapturer
+
+#set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+#set $wob wob --height 25 --border 1 --anchor top
+#exec mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+#exec conky
+#exec batify --low-level 40 --critical-level 15 --full-capacity 80 --interval 60
+#exec clight-gui --tray
+#exec wl-gammarelay
+#exec env GDK_BACKEND=wayland ulauncher --hide-window
+
+default_border pixel 2
+#default_floating_border pixel 5
+
+bar {
+    swaybar_command waybar
+}
+
+include /home/cadu/.config/sway/conf.d/*
+include /etc/sway/config.d/*

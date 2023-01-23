@@ -1,0 +1,1 @@
+class Cachorro extends Animal {}

@@ -1,0 +1,166 @@
+2023-01-14 15:25:45.744 [debug] [Registering Log Channel] File does not exist. Waiting for 1s to retry. file:///home/cadu/.config/VSCodium/logs/20230114T152543/userDataSync.log
+2023-01-14 15:25:45.745 [debug] [Registering Log Channel] File does not exist. Waiting for 1s to retry. file:///home/cadu/.config/VSCodium/logs/20230114T152543/editSessions.log
+2023-01-14 15:25:45.746 [debug] [Registering Log Channel] File does not exist. Waiting for 1s to retry. file:///home/cadu/.config/VSCodium/logs/20230114T152543/sharedprocess.log
+2023-01-14 15:25:45.746 [debug] [Registering Log Channel] File does not exist. Waiting for 1s to retry. file:///home/cadu/.config/VSCodium/logs/20230114T152543/ptyhost.log
+2023-01-14 15:25:45.831 [debug] ComputeTargetPlatform: linux-x64
+2023-01-14 15:25:45.885 [warning] [amirHA.better-comments-2]: Não é possível registrar 'better-comments.multilineComments'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.885 [warning] [amirHA.better-comments-2]: Não é possível registrar 'better-comments.highlightPlainText'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.886 [warning] [amirHA.better-comments-2]: Não é possível registrar 'better-comments.tags'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.890 [warning] [REditorSupport.r]: Não é possível registrar 'r.rpath.windows'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.891 [warning] [REditorSupport.r]: Não é possível registrar 'r.rpath.mac'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.891 [warning] [REditorSupport.r]: Não é possível registrar 'r.rpath.linux'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.892 [warning] [REditorSupport.r]: Não é possível registrar 'r.rterm.windows'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.892 [warning] [REditorSupport.r]: Não é possível registrar 'r.rterm.mac'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.892 [warning] [REditorSupport.r]: Não é possível registrar 'r.rterm.linux'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.893 [warning] [REditorSupport.r]: Não é possível registrar 'r.rterm.option'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.893 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.enabled'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.894 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.args'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.894 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.debug'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.895 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.diagnostics'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.895 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.lang'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.895 [warning] [REditorSupport.r]: Não é possível registrar 'r.lsp.use_stdio'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.896 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.codeLensCommands'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.896 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.enableCodeLens'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.896 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.chunkBackgroundColor'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.897 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.preview.autoRefresh'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.898 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.knit.useBackgroundProcess'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.899 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.knit.focusOutputChannel'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.900 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.knit.openOutputFile'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.900 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.knit.command'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.901 [warning] [REditorSupport.r]: Não é possível registrar 'r.rmarkdown.knit.defaults.knitWorkingDirectory'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.901 [warning] [REditorSupport.r]: Não é possível registrar 'r.helpPanel.enableSyntaxHighlighting'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.902 [warning] [REditorSupport.r]: Não é possível registrar 'r.helpPanel.cacheIndexFiles'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.902 [warning] [REditorSupport.r]: Não é possível registrar 'r.helpPanel.rpath'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.903 [warning] [REditorSupport.r]: Não é possível registrar 'r.helpPanel.enableHoverLinks'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.903 [warning] [REditorSupport.r]: Não é possível registrar 'r.source.encoding'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.904 [warning] [REditorSupport.r]: Não é possível registrar 'r.source.focus'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.904 [warning] [REditorSupport.r]: Não é possível registrar 'r.alwaysUseActiveTerminal'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.905 [warning] [REditorSupport.r]: Não é possível registrar 'r.bracketedPaste'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.905 [warning] [REditorSupport.r]: Não é possível registrar 'r.sessionWatcher'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.906 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.watchGlobalEnvironment'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.906 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.objectLengthLimit'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.907 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.objectTimeout'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.907 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.levelOfObjectDetail'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.907 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.emulateRStudioAPI'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.908 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.data.rowLimit'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.908 [warning] [REditorSupport.r]: Não é possível registrar 'r.session.viewers.viewColumn'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.909 [warning] [REditorSupport.r]: Não é possível registrar 'r.rtermSendDelay'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.909 [warning] [REditorSupport.r]: Não é possível registrar 'r.workspaceViewer.showObjectSize'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.909 [warning] [REditorSupport.r]: Não é possível registrar 'r.workspaceViewer.removeHiddenItems'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.910 [warning] [REditorSupport.r]: Não é possível registrar 'r.workspaceViewer.clearPrompt'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.910 [warning] [REditorSupport.r]: Não é possível registrar 'r.liveShare.timeout'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.910 [warning] [REditorSupport.r]: Não é possível registrar 'r.liveShare.defaults.commandForward'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.911 [warning] [REditorSupport.r]: Não é possível registrar 'r.liveShare.defaults.shareWorkspace'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.911 [warning] [REditorSupport.r]: Não é possível registrar 'r.liveShare.defaults.shareBrowser'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.911 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.useHttpgd'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.912 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.defaults.colorTheme'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.912 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.defaults.plotPreviewLayout'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.912 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.defaults.fullWindowMode'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.913 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.timing.resizeInterval'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.913 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.timing.refreshInterval'. Esta propriedade já está registrada.
+2023-01-14 15:25:45.914 [warning] [REditorSupport.r]: Não é possível registrar 'r.plot.customStyleOverwrites'. Esta propriedade já está registrada.
+2023-01-14 15:25:46.059 [info] [REditorSupport.r]: O comando `r.workspaceViewer.refreshEntry` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.061 [info] [REditorSupport.r]: O comando `r.workspaceViewer.view` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.063 [info] [REditorSupport.r]: O comando `r.workspaceViewer.clear` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.065 [info] [REditorSupport.r]: O comando `r.workspaceViewer.remove` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.066 [info] [REditorSupport.r]: O comando `r.workspaceViewer.save` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.067 [info] [REditorSupport.r]: O comando `r.workspaceViewer.load` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.068 [info] [REditorSupport.r]: O comando `r.browser.refresh` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.074 [info] [REditorSupport.r]: O comando `r.browser.openExternal` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.074 [info] [REditorSupport.r]: O comando `r.showHelp` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.075 [info] [REditorSupport.r]: O comando `editor.action.webvieweditor.showFind` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.075 [info] [REditorSupport.r]: O comando `r.createRTerm` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.076 [info] [REditorSupport.r]: O comando `r.runSource` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.076 [info] [REditorSupport.r]: O comando `r.knitRmd` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.077 [info] [REditorSupport.r]: O comando `r.knitRmdToPdf` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.078 [info] [REditorSupport.r]: O comando `r.knitRmdToHtml` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.078 [info] [REditorSupport.r]: O comando `r.knitRmdToAll` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.078 [info] [REditorSupport.r]: O comando `r.runSourcewithEcho` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.079 [info] [REditorSupport.r]: O comando `r.runSelection` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.079 [info] [REditorSupport.r]: O comando `r.nrow` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.080 [info] [REditorSupport.r]: O comando `r.length` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.080 [info] [REditorSupport.r]: O comando `r.head` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.081 [info] [REditorSupport.r]: O comando `r.thead` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.081 [info] [REditorSupport.r]: O comando `r.names` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.082 [info] [REditorSupport.r]: O comando `r.createGitignore` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.082 [info] [REditorSupport.r]: O comando `r.previewDataframe` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.082 [info] [REditorSupport.r]: O comando `r.previewEnvironment` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.083 [info] [REditorSupport.r]: O comando `r.loadAll` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.083 [info] [REditorSupport.r]: O comando `r.build` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.084 [info] [REditorSupport.r]: O comando `r.check` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.084 [info] [REditorSupport.r]: O comando `r.document` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.085 [info] [REditorSupport.r]: O comando `r.install` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.085 [info] [REditorSupport.r]: O comando `r.test` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.085 [info] [REditorSupport.r]: O comando `r.attachActive` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.086 [info] [REditorSupport.r]: O comando `r.runCommandWithSelectionOrWord` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.088 [info] [REditorSupport.r]: O comando `r.runCommandWithEditorPath` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.089 [info] [REditorSupport.r]: O comando `r.runCommand` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.089 [info] [REditorSupport.r]: O comando `r.runFromBeginningToLine` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.090 [info] [REditorSupport.r]: O comando `r.runFromLineToEnd` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.090 [info] [REditorSupport.r]: O comando `r.runSelectionRetainCursor` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.090 [info] [REditorSupport.r]: O comando `r.selectCurrentChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.091 [info] [REditorSupport.r]: O comando `r.runCurrentChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.091 [info] [REditorSupport.r]: O comando `r.runPreviousChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.091 [info] [REditorSupport.r]: O comando `r.runNextChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.091 [info] [REditorSupport.r]: O comando `r.runAboveChunks` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.092 [info] [REditorSupport.r]: O comando `r.runCurrentAndBelowChunks` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.092 [info] [REditorSupport.r]: O comando `r.runBelowChunks` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.092 [info] [REditorSupport.r]: O comando `r.runAllChunks` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.093 [info] [REditorSupport.r]: O comando `r.goToPreviousChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.093 [info] [REditorSupport.r]: O comando `r.goToNextChunk` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.093 [info] [REditorSupport.r]: O comando `r.rmarkdown.newDraft` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.094 [info] [REditorSupport.r]: O comando `r.rmarkdown.setKnitDirectory` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.094 [info] [REditorSupport.r]: O comando `r.rmarkdown.showPreviewToSide` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.094 [info] [REditorSupport.r]: O comando `r.rmarkdown.showPreview` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.095 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.refresh` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.095 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.openExternal` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.095 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.showSource` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.096 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.toggleStyle` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.096 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.enableAutoRefresh` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.097 [info] [REditorSupport.r]: O comando `r.rmarkdown.preview.disableAutoRefresh` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.097 [info] [REditorSupport.r]: O comando `r.launchAddinPicker` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.097 [info] [REditorSupport.r]: O comando `r.helpPanel.back` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.098 [info] [REditorSupport.r]: O comando `r.helpPanel.forward` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.099 [info] [REditorSupport.r]: O comando `r.helpPanel.openExternal` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.099 [info] [REditorSupport.r]: O comando `r.helpPanel.searchPackage` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.099 [info] [REditorSupport.r]: O comando `r.helpPanel.openInNewPanel` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.100 [info] [REditorSupport.r]: O comando `r.helpPanel.clearCache` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.100 [info] [REditorSupport.r]: O comando `r.helpPanel.filterPackages` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.100 [info] [REditorSupport.r]: O comando `r.helpPanel.removeFromFavorites` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.101 [info] [REditorSupport.r]: O comando `r.helpPanel.addToFavorites` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.101 [info] [REditorSupport.r]: O comando `r.helpPanel.showAllPackages` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.101 [info] [REditorSupport.r]: O comando `r.helpPanel.showOnlyFavorites` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.102 [info] [REditorSupport.r]: O comando `r.helpPanel.removePackage` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.102 [info] [REditorSupport.r]: O comando `r.helpPanel.updateInstalledPackages` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.103 [info] [REditorSupport.r]: O comando `r.helpPanel.updatePackage` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.103 [info] [REditorSupport.r]: O comando `r.helpPanel.installPackages` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.103 [info] [REditorSupport.r]: O comando `r.helpPanel.showQuickPick` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.104 [info] [REditorSupport.r]: O comando `r.helpPanel.summarizeTopics` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.104 [info] [REditorSupport.r]: O comando `r.helpPanel.unsummarizeTopics` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.104 [info] [REditorSupport.r]: O comando `r.helpPanel.openForSelection` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.105 [info] [REditorSupport.r]: O comando `r.helpPanel.openForPath` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.105 [info] [REditorSupport.r]: O comando `r.liveShare.toggle` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.106 [info] [REditorSupport.r]: O comando `r.liveShare.retry` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.106 [info] [REditorSupport.r]: O comando `r.plot.toggleStyle` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.106 [info] [REditorSupport.r]: O comando `r.plot.toggleFullWindow` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.107 [info] [REditorSupport.r]: O comando `r.plot.togglePreviewPlots` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.107 [info] [REditorSupport.r]: O comando `r.plot.exportPlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.108 [info] [REditorSupport.r]: O comando `r.plot.closePlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.108 [info] [REditorSupport.r]: O comando `r.plot.hidePlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.109 [info] [REditorSupport.r]: O comando `r.plot.resetPlots` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.110 [info] [REditorSupport.r]: O comando `r.plot.prevPlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.110 [info] [REditorSupport.r]: O comando `r.plot.nextPlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.110 [info] [REditorSupport.r]: O comando `r.plot.firstPlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.111 [info] [REditorSupport.r]: O comando `r.plot.lastPlot` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.111 [info] [REditorSupport.r]: O comando `r.plot.zoomIn` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.112 [info] [REditorSupport.r]: O comando `r.plot.zoomOut` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.112 [info] [REditorSupport.r]: O comando `r.plot.showViewers` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.112 [info] [REditorSupport.r]: O comando `r.plot.openUrl` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.113 [info] [REditorSupport.r]: O comando `r.plot.openExternal` aparece várias vezes na seção `commands`.
+2023-01-14 15:25:46.113 [info] [REditorSupport.r]: O submenu `r.knitCommands` já foi registrado anteriormente.
+2023-01-14 15:25:46.114 [warning] [REditorSupport.r]: Já foi feita a contribuição do submenu `r.knitCommands` para o menu `editor/title`.
+2023-01-14 15:25:46.211 [error] [REditorSupport.r]: Não é possível registrar vários modos de exibição com a mesma id `workspaceViewer`
+2023-01-14 15:25:46.211 [error] [REditorSupport.r]: Não é possível registrar vários modos de exibição com a mesma id `rHelpPages`
+2023-01-14 15:25:46.212 [error] [REditorSupport.r]: Não é possível registrar vários modos de exibição com a mesma id `rLiveShare`
+2023-01-14 15:25:46.865 [debug] [Registering Log Channel] File does not exist. Waiting for 1s to retry. file:///home/cadu/.config/VSCodium/logs/20230114T152543/editSessions.log
+2023-01-14 15:25:48.891 [info] [perf] Render performance baseline is 46ms

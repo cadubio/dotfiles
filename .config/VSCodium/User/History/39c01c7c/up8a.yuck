@@ -1,0 +1,9 @@
+(defwindow powermenu
+    :monitor 0
+    :stacking "fg"
+    :windowtype "normal"
+    :wm-ignore true
+    :geometry (geometry
+                :width "50%"
+                :height "50%")
+    (label :text "Olá, Mundo!"))

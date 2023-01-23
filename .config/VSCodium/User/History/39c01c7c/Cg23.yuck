@@ -1,0 +1,6 @@
+(defwindow teste 
+  :stacking "fg"
+  :windowtype "normal"
+  :geometry (geometry: :width "50%"
+                       :height "50%")
+(label :text "Olá Mundo!!"))

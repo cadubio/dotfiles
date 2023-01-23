@@ -1,0 +1,16 @@
+
+* {
+
+    background-color: beige;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comprar {
+    background-color: #000;
+}

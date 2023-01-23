@@ -1,0 +1,27 @@
+2023-01-22 06:58:45.865 [info] Nível de log: Debug
+2023-01-22 06:58:45.865 [info] Validando o git encontrado em: git
+2023-01-22 06:58:45.865 [info] Usando git ''2.39.1'' de ''git''
+2023-01-22 06:58:45.865 [info] > git rev-parse --show-toplevel [4ms]
+2023-01-22 06:58:45.865 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:45.865 [info] > git rev-parse --show-toplevel [2ms]
+2023-01-22 06:58:45.865 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:45.865 [info] > git rev-parse --show-toplevel [2ms]
+2023-01-22 06:58:45.865 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:45.865 [info] > git rev-parse --show-toplevel [8ms]
+2023-01-22 06:58:45.865 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:45.878 [info] > git rev-parse --show-toplevel [24ms]
+2023-01-22 06:58:45.878 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:45.890 [info] > git rev-parse --show-toplevel [4ms]
+2023-01-22 06:58:45.890 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:58:46.620 [info] > git rev-parse --show-toplevel [6ms]
+2023-01-22 06:58:46.620 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2023-01-22 06:59:13.681 [info] Nível de log: Debug
+2023-01-22 06:59:13.681 [info] Validando o git encontrado em: git
+2023-01-22 06:59:13.681 [info] Usando git ''2.39.1'' de ''git''

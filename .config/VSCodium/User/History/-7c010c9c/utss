@@ -1,0 +1,201 @@
+[{
+"output": "eDP-1", 
+"layer": "top",
+"position": "top",
+"modules-left": ["idle_inhibitor", "cpu", "temperature", "memory", "battery", "disk", "pulseaudio#mic", "pulseaudio", "backlight", "custom/ddcutil", "custom/bluetooth-battery", "custom/cap-left"],
+"modules-center": ["sway/workspaces", "sway/mode"],
+"modules-right": ["custom/cap-right", "custom/weather", "network", "custom/vpn", "custom/uptime", "clock", "custom/pacman", "custom/aur", "custom/offswitch", "tray"],
+"sway/mode": {
+  "format":{}
+},
+"tray": {
+  "icon-size": 16,
+  "spacing": 5
+},
+"backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", ""]
+},
+"custom/weather": {
+  "tooltip": false,
+
+  "exec": "curl 'https://wttr.in/Florianopolis?m&format='%t''",
+  "interval": 3600
+},
+"battery": {
+  "interval": 15,
+  "states": {
+  "full": 78,
+  "warning": 30,
+  "critical": 15
+  },
+  "tooltip": false,
+  "full-at": 78,
+  "format-plugged": "{icon} {capacity}%",
+  "format-charging": "{icon} {capacity}%",
+  "format": "{icon} {capacity}%",
+  "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+},
+"clock": {
+  "format": "{:%a %d %b %H:%M}",
+  "timezone": "America/Sao_Paulo",
+  "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  "on-click": "gsimplecal"
+},
+"custom/offswitch": {
+  "tooltip": false,
+  "format": "",
+  "interval": "once",
+  "on-click": "wlogout"
+},
+"network": {
+  "format-wifi": " {essid}",
+  "format-ethernet": " {ipaddr}",
+  "format-linked": " {ifname}",
+  "format-disconnected": " Sem rede",
+  "max-lenght": 16, 
+  "tooltip-format": "  {ifname} via {gwaddr}",
+  "tooltip-format-wifi": "  {signalStrength}% {ipaddr}/{cidr}",
+  "tooltip-format-ethernet": "  {ifname} via {gwaddr}",
+  "tooltip-format-disconnected": "Sem rede",
+  "on-click": "alacritty --config-file ~/.config/alacritty/nmtui.yml -e nmtui",
+  "on-click-middle": "$HOME/.config/waybar/scripts/vpn-up.sh",
+  "on-click-right": "$HOME/.config/waybar/scripts/vpn-down.sh"
+},
+"custom/vpn": {
+  "tooltip": false,
+  "format": "VPN",
+  "exec": "echo '{\"class\": \"connected\"}'",
+  "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+  "return-type": "json",
+  "interval": 5,
+  "min-length": 5
+},
+"pulseaudio": {
+  "tooltip": false,
+  "format": "{icon} {volume}%",
+  "format-bluetooth": "{icon} {volume}%",
+  "format-muted": "🔇 MUDO",
+  "format-icons": {
+  "headphone": "",
+  "headset": "",
+  "default": ["", "", ""]
+  },
+  "on-click": "pavucontrol"
+},
+"pulseaudio#mic": {
+        "format": "{format_source}",
+        "format-source": "",
+  	"format-source-muted": "",
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "tooltip": false 
+},
+"idle_inhibitor": {
+  "tooltip": false,
+  "format": "{icon}",
+  "format-icons": {
+  "activated": "",
+  "deactivated": ""
+  }
+},
+"cpu": {
+  "interval": 4,
+  "min-length": 6,
+  "format": " {usage}%",
+  "states": {
+  "critical": 90
+  }
+},
+"temperature": {
+  "tooltip": false,
+  "min-length": 6,
+  "critical-threshold": 90,
+  "format": "{icon} {temperatureC}°C",
+  "format-critical": "{icon} {temperatureC}°C",
+  "format-icons": {
+  "default": ["", "", "", "", ""]
+  }
+},
+"memory": {
+  "format": " {percentage}%",
+  "states": {
+    "critical":90
+  },
+  "min-length": 5
+},
+"disk": {
+  "path": "/home",
+  "interval": 60,
+  "min-length": 5,
+  "format": "🗁 {percentage_used}%",
+  "states": {
+  "critical": 90
+  }
+},
+"sway/workspaces": {
+  "tooltip": false,
+  "disable-scroll": true,
+  "persistent_workspaces": {
+     "1": ["eDP-1"]
+  }
+},
+"custom/cap-left": {
+  "tooltip": false,
+	"format": ""
+},
+"custom/cap-right": {
+  "tooltip": false,
+	"format": ""
+},
+"custom/pacman": {
+  "format": " {}",
+  "interval": 3600,   
+  "exec": "checkupdates | wc -l",       
+  "exec-if": "exit 0",
+  "tooltip": false
+},
+"custom/aur": {
+  "format": "{}",
+  "interval": 28800,
+  "exec": "auracle outdated | wc -l",   
+  "exec-if": "exit 0",
+  "tooltip": false
+},
+"custom/uptime": {
+  "format": " {}",
+  "interval": 60,
+  "exec": "uptime | cut -d ',' -f1  | cut -d ' ' -f4,5",
+  "exec-if": "exit 0",
+  "tooltip": false
+},
+"custom/ddcutil": {
+  "format": "{icon} {percentage}%",
+  "format-icons": ["", ""],
+  "interval": 2,
+  "exec": "$HOME/.config/waybar/scripts/brilho-monitor-externo.sh",
+  "return-type": "json",
+  "tooltip": false
+},
+"custom/bluetooth-battery": {
+  "format": "{}",
+  "return-type": "json",
+  "interval": 5,
+  "exec": "~/.config/waybar/scripts/bluetooth-battery.sh",
+  "exec-if": "bluetooth_battery_status.sh >/dev/null 2>&1",
+  "signal": 9
+}
+},
+{
+  "output": "HDMI-A-2",
+  "layer": "top",
+  "position": "top",
+  "modules-center": ["sway/workspaces", "sway/mode"]
+}
+]

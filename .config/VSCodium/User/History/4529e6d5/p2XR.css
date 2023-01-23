@@ -1,0 +1,153 @@
+a {
+    text-decoration: none;
+  }
+
+  .elipse{
+    position: fixed;
+    bottom: -3%;
+    left: 40%;
+    height: 300%;
+    width: 150%;
+    background-color: #679437;
+    /* Setting Border Radius */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+  body {
+    font-size: 100%;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .conteudo-logo-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8% 20% 0 8%;
+  }
+
+  @media (orientation: portrait) {
+    .conteudo-logo-link {
+      display: block;
+    }
+  }
+
+  a.botao {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background-color:#FFFFFF;
+    border:1px solid #FFFFFF;
+    border-radius:5px;
+    color:#A5BE00;
+    margin-right:10px;
+    padding:10px;
+    animation: blinking 2s infinite;
+   }
+
+    /* Fundo do botão piscando */
+    @keyframes blinking {
+      0% {
+        /*background-color: #ecf7a5;*/
+        color:#A5BE00;
+      }
+      100% {
+       /* background-color: #A5BE00;*/
+        color: #ecf7a5;
+  
+      }
+    }
+
+  a.botao:active,a.botao:focus,a.botao:hover {
+    background-color: #FFFFFF;
+    margin-top:-5px;
+   }
+   
+   a.botao:hover {
+    border:1px solid #000000;
+    animation: none;
+   }
+
+   .conteudo-frases-grafico {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 4% 8% 0 8%;
+   }
+   
+   .conteudo-frases {
+    display: flex;
+    flex-direction: column;
+ 
+
+   }
+   .conteudo-titulo {
+    background-color: #FFFFFF;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    color: #679436;
+   }
+
+   .conteudo-subtitulo {
+    background-color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #869D96;
+  }
+
+  .conteudo-grafico {
+    display: flex;
+    flex: 0 2 auto;
+  }
+
+  .rodape {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    color: Gray;
+    padding: 2% 8% 0 3%;
+    margin-bottom: 0;
+
+  }
+
+  .rodape-texto {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .logo-rodape {
+    width: 30px;
+  }
+
+  /* Página Contato */
+
+  body.corpo-contato {
+
+
+    background-color: #A5BE00;
+  }
+
+  .conteudo-contato {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10% ;
+    color: Gray;
+    font-size: 22px;
+  }
+ 
