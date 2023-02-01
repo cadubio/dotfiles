@@ -1,3 +1,3 @@
-2023/01/22-07:06:00.466 c6f8 Reusing MANIFEST /home/cadu/.config/rstudio/Local Storage/leveldb/MANIFEST-000001
-2023/01/22-07:06:00.467 c6f8 Recovering log #3
-2023/01/22-07:06:00.467 c6f8 Reusing old log /home/cadu/.config/rstudio/Local Storage/leveldb/000003.log 
+2023/01/30-07:39:03.233 e8e Reusing MANIFEST /home/cadu/.config/rstudio/Local Storage/leveldb/MANIFEST-000001
+2023/01/30-07:39:03.243 e8e Recovering log #3
+2023/01/30-07:39:03.244 e8e Reusing old log /home/cadu/.config/rstudio/Local Storage/leveldb/000003.log 

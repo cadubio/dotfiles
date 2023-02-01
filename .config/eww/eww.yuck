@@ -456,10 +456,10 @@
 (defwidget menu_desliga []
   (box :class "menu_desliga" :orientation "v"
     (box :class "opcoes_letras" :orientation "h" :space-evenly "true" :vexpand "false" :hexpand "false"
-      (label :class "d" :text "D")
-      (label :class "r" :text "R")
-      (label :class "l" :text "L")
-      (label :class "c" :text "ESC")
+      (button :class "d" :onclick "systemctl poweroff" "D")
+      (button :class "r" :onclick "systemctl reboot" "R")
+      (button :class "l" :onclick "exit" "L")
+      (button :class "c" "ESC")
     )
     (box :class "opcoes" :orientation "h" :space-evenly "true" :vexpand "false" :hexpand "false"
       (label :class "menu_desliga_opcoes" :text "[ desligar ]")

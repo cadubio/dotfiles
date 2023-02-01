@@ -1,4 +1,4 @@
 #!/bin/bash
-hyprctl dispatch -- exec firefox --new-instance -P mensageiros "https://web.whatsapp.com/" "https://web.telegram.org/z/" "https://mail.google.com/chat/u/0/#chat/welcome" "https://www.instagram.com/direct/inbox/?theme=dark" "https://discord.com/channels/@me" "https://todoist.com/app/today" 
+hyprctl dispatch -- exec firefox --new-instance -P mensageiros "https://web.whatsapp.com/" "https://web.telegram.org/z/" "https://twitter.com" "https://mail.google.com/chat/u/0/#chat/welcome" "https://www.instagram.com/direct/inbox/?theme=dark" "https://discord.com/channels/@me" "https://todoist.com/app/today" 
 #hyprctl dispatch movetoworkspace "special,class:^(firefox)$"
 #hyprctl dispatch workspace "unset,class:^(firefox)$"

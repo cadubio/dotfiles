@@ -38,10 +38,33 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reabrir o Editor Fechado"
+                                    "label": "&&Reabrir o Editor Fechado",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/cadu/.config",
+                                        "path": "/home/cadu/.config",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/cadu/projetos_js/testes/shapefile",
+                                        "path": "/home/cadu/projetos_js/testes/shapefile",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projetos_js/testes/shapefile"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -53,6 +76,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/eww"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/cadu/.config/hypr",
+                                        "path": "/home/cadu/.config/hypr",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/hypr"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -119,39 +153,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/waybar"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/cadu/.config",
-                                        "path": "/home/cadu/.config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/cadu/projetos_js/curso-jsFuncional/funcoes",
-                                        "path": "/home/cadu/projetos_js/curso-jsFuncional/funcoes",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/projetos_js/curso-jsFuncional/funcoes"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///tmp",
-                                        "path": "/tmp",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/tmp"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -303,13 +304,11 @@
                     },
                     {
                         "id": "workbench.action.files.save",
-                        "label": "&&Salvar",
-                        "enabled": false
+                        "label": "&&Salvar"
                     },
                     {
                         "id": "workbench.action.files.saveAs",
-                        "label": "Salvar &&como...",
-                        "enabled": false
+                        "label": "Salvar &&como..."
                     },
                     {
                         "id": "saveAll",
@@ -406,13 +405,15 @@
                     },
                     {
                         "id": "workbench.action.files.revert",
-                        "label": "Re&&verter Arquivo",
-                        "enabled": false
+                        "label": "Re&&verter Arquivo"
                     },
                     {
                         "id": "workbench.action.closeActiveEditor",
-                        "label": "&&Fechar o Editor",
-                        "enabled": false
+                        "label": "&&Fechar o Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Fechar &&Pasta"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -457,13 +458,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Localizar",
-                        "enabled": false
+                        "label": "&&Localizar"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Substituir",
-                        "enabled": false
+                        "label": "&&Substituir"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -610,7 +609,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Barra Lateral Primária"
+                                    "label": "&&Barra Lateral Primária",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -843,8 +843,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Quebra De Texto",
-                        "enabled": false
+                        "label": "&&Quebra De Texto"
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -866,8 +865,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Localização da Última Edição",
-                        "enabled": false
+                        "label": "&&Localização da Última Edição"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1377,6 +1375,11 @@
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1738,7 +1741,8 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/cadu/.config/VSCodium/Backups/1674381551468",
+            "folder": "file:///home/cadu/.config",
+            "backupPath": "/home/cadu/.config/VSCodium/Backups/f3fdeba56257a216d66fdbc8aec29ef4",
             "uiState": {
                 "mode": 1,
                 "x": 0,
@@ -1768,7 +1772,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 183,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1778,13 +1782,9 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/cadu/.config/eww"
+                "folderUri": "file:///home/cadu/.config"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1674381551468"
-            }
-        ]
+        "emptyWindows": []
     }
 }
