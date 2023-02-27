@@ -91,10 +91,6 @@ tooltip label {
 
 }
 
-.updates_text {
-  margin-right: 10px;
-}
-
 .mem_module {
   background-color: #0f0f17;
   border-radius: 16px;
@@ -243,8 +239,8 @@ tooltip label {
 .module_essid {
   font-size: 14px;
   color: #a1bdce;
-  margin: 0px 10px 0px 0px;
 }
+
 .module-wif {
   font-size: 18px;
   color: #e4c9af;
@@ -262,7 +258,7 @@ tooltip label {
   color: #3e424f;
   font-weight: bold;
   font-size: 16px;
-  margin: 0px;
+  margin: 0px 10px;
 }
 
 
@@ -654,15 +650,45 @@ calendar:indeterminate {
   color: #bbc5d7;
 }
 
+.idle-text {
+  font-size: 10px;
+}
+
 .system-btn-off {
-  margin-left: 8px;
   color: #a1bdce;
 }
 
 .system-btn-on {
   color: #e94f4f;
-  margin-left: 8px;
 }
+
+
+.system-btn-off {
+
+  color: #a1bdce;
+}
+
+.system-btn-on {
+  color: #e94f4f;
+ }
+
+.vpn-text {
+  font-size: 10px;
+  margin-right: 10px;
+ 
+}
+
+.vpn-off {
+  margin-right: 10px; 
+  color: #a1bdce;
+}
+
+.vpn-on {
+  margin-right: 10px;	
+  color: #e94f4f;
+
+}
+
 
 .aviso {
   border: 3px solid #77a5bf;

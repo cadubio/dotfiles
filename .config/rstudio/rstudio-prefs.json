@@ -50,5 +50,6 @@
     "spelling_custom_dictionaries": [
         "pt_BR"
     ],
-    "font_size_points": 12
+    "editor_theme": "Dracula",
+    "source_with_echo": true
 }

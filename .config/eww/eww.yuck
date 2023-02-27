@@ -21,7 +21,8 @@
 ;(defvar music_reveal false)
 (defvar wifi_rev false)
 (defvar time_rev false)
-(defvar idle_inhibitor false)
+(defvar idle_inhibitor true)
+(defvar vpn_icon false)
 
 (deflisten workspace "scripts/./workspace")
 
@@ -53,8 +54,7 @@
             :onhoverlost "${EWW_CMD} update wifi_rev=false"
     (box :vexpand "false" :hexpand "false" :space-evenly "false"
       (button :class "module-wif"
-        :timeout "300ms"
-        :onclick "networkmanager_dmenu"
+        :onclick "${EWW_CONFIG_DIR}/scripts/./apps --rede"
         :style "color: ${COL_WLAN};"
       WLAN_ICON)
       (revealer :transition "slideleft"
@@ -62,11 +62,21 @@
         :duration "350ms"
         (button 
           :class "module_essid"
-          :timeout "300ms"
-          :onclick "networkmanager_dmenu"
+          :onclick "${EWW_CONFIG_DIR}/scripts/./apps --rede"
           ESSID_WLAN
         )
       )
+    )
+  )
+)
+
+(defwidget vpn []
+ (box :class "vpn" :valign "center" :orientation "v" :halign "center"
+    (label :class "vpn-text" :text "vpn")
+    (button
+      :class {vpn_icon ? "vpn-on" : "vpn-off"}
+      :onclick "scripts/./vpn"
+      {vpn_icon ? "" : ""}
     )
   )
 )
@@ -98,10 +108,11 @@
 )
 
 (defwidget modulo_apresentacao []
-  (box :class "apresentacao" :space-evenly "false" :orientation "h"
+  (box :class "apresentacao" :space-evenly "false" :orientation "v" :valign "center" :halign "center"
+    (label :class "idle-text" :text "dpms")
     (button
       :class {idle_inhibitor ? "system-btn-on" : "system-btn-off"}
-      :onclick "scripts/./idle_inhibitor toggle"
+      :onclick "scripts/./idle_inhibi"
       :tooltip "Modo Apresentação"
       {idle_inhibitor ? "" : ""}
     )
@@ -222,9 +233,11 @@
   (box :orientation "h"
     :space-evenly "false"
     :halign "end"
+    :valign "center"
     :class "left_modules"
     (updates)
     (sep)
+    (vpn)
     (modulo_apresentacao)
     (bright)
     (volume)
@@ -242,8 +255,9 @@
 
 (defwidget right []
   (box :orientation "h"
-    :space-evenly "true"
+    :space-evenly "false"
     :halign "start"
+    :valign "center"
     :class "right_modules"
     (janela_titulo)
   )

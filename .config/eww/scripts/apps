@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $1 == "--rede" ]]; then
-    sleep 0.3
+    sleep 1
     networkmanager_dmenu
 elif [[ $1 == "--audio" ]]; then
     sleep 0.3
