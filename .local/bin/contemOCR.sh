@@ -18,13 +18,16 @@ fi
 
 # Variáveis
 declare -i conta=0;
+declare -i paginas=0;
+declare -i totalPaginas=0;
 DATUAL=`pwd`;
 arquivos=`find . -type f -name "*.pdf"`;
 Red='\033[0;31m'; 
 Pink='\033[33;35m';
 RCol='\033[0m';
 
-echo "" 1>&3
+echo ""
+echo -e "${Red}Buscando todos PDFs desta pasta/subpastas." 1>&3
 
 for arquivo in $arquivos;
 do
@@ -45,7 +48,9 @@ do
 	echo " ---> Arquivo ocr_${arq##/*/} existe!" 
     else
     conta+=1;	
+    totalPaginas+=paginas;
     TMPD=`mktemp -d -p "$HOME/tmp"`
+    
     cd $TMPD
     echo -n " Criando imagens em $TMPD ... " 
     pdftoppm -r 300 "$arq" temp
@@ -71,7 +76,7 @@ do
     rm -rf $TMPD
     rm -f out.pdf
     echo "feito!"
-
+ 
     echo ""
     echo -e " ---> Arquivo criado: ${Pink}ocr_${arq##/*/}" 1>&3
     echo " ---> Arquivo criado: ocr_${arq##/*/}"
@@ -82,8 +87,8 @@ done
 
 if [ $conta -gt 0 ];
 then
- echo -e " ${Red}Reconhecimento de caracteres realizado em $conta PDFs" 1>&3
- echo " Reconhecimento de caracteres realizado em $conta PDFs"
+	echo -e " ${Red}Reconhecimento de caracteres realizado em $conta PDFs ($totalPaginas páginas)" 1>&3
+	echo " Reconhecimento de caracteres realizado em $conta PDFs ($totalPaginas páginas)"
 else
  echo -e " ${Red}Todos os PDfs são pesquisáveis!" 1>&3
  echo " Todos os PDfs são pesquisáveis!"
