@@ -616,6 +616,11 @@ calendar:indeterminate {
   font-size: 14px;
   margin: 0px;
 }
+
+.noise_reduct {
+  margin-left: 10px
+}
+
 /* FIM Audio Box */
 
 .menu_desliga {
@@ -694,18 +699,33 @@ calendar:indeterminate {
   border: 3px solid #77a5bf;
   border-radius: 12px;
   color: #e94f4f;
-  background-color: #38384d;
+  background-color: #22242b;
+  //background-color: #38384d;
   font-size: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+
 }
 
-.bto_batCritica_fechar {
-  font-size: 26px;
+.box_atencao_fechar {
+  margin: 10px 0;
+}
+
+.bto_fechar_batCritica {
   color: #a1bdce;
-  margin: 0px 0px -20px 345px;
-  padding: 2px;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.txt_atencao,
+.txt_conecte_carregador {
+  color: #e9e111;
 }
 
 .txt_nivel_critico {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.txt_conecte_carregador {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

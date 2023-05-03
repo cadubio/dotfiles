@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-# Fonte https://github.com/hypperd
+#!/bin/bash
 
 trap exit 0 SIGINT SIGTERM
 
@@ -10,8 +8,8 @@ loop() {
     done
 }
 
-#echo ${BASH_SOURCE[0]}
-echo $$
+#$echo ${BASH_SOURCE[0]}
+#echo $$
 
 script_name=${BASH_SOURCE[0]}
 

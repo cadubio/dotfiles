@@ -1,6 +1,6 @@
 typeset -U PATH path
-#path+=($HOME/.pub-cache/bin local/bin $HOME/Android/flutter/bin $HOME/.pub-cache/bin)
-path+=($HOME/.pub-cache/bin)
+#path+=($HOME/Android/flutter/bin $HOME/.pub-cache/bin)
+path+=($HOME/.pub-cache/bin /home/cadu/fvm/default/bin)
 
 path=("$HOME/.local/bin" "$path[@]")
 #export WAYLAND_DEBUG=1

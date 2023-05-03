@@ -2,25 +2,24 @@
 TMPD=`mktemp -d`
 DATUAL=`pwd`
 cd $TMPD
-echo "Criando imagens" "$TMPD"
-echo
+echo -n "Criando imagens em $TMPD ... ";
 pdftoppm -r 300 "$DATUAL/$2" temp
+echo "feito!"
 
 for f in *.ppm; do
-    echo
-    echo "Reconhecendo caracteres na página $f"
+    echo -n "Reconhecendo caracteres na página $f ...";
     tesseract -l "$1" --dpi 300 "$f" "$f" pdf
-    clear
+    echo "feito!"
 done
 
-echo "Criando PDF pesquisável..."
-echo
+echo -n "Criando PDF pesquisável ... "
 cd "$DATUAL"
 pdftk $TMPD/*.pdf cat output out.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="${2%.pdf}_novo.pdf" out.pdf
-echo
-echo "Removendo temporários" $TMPD
-rmdir --ignore-fail-on-non-empty $TMPD
-rm out.pdf
-echo
-echo "Arquivo criado:" ${2%.pdf}"_novo.pdf"
+echo "feito!"
+echo -n "Removendo temporários de $TMPD ... ";
+rm -rf $TMPD
+rm -f  out.pdf
+echo "feito!"
+echo ""
+echo " Arquivo criado:" ${2%.pdf}"_novo.pdf"

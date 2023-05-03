@@ -9,4 +9,5 @@ alias extract="/usr/bin/extract"
 alias multibootusb='xfsudo multibootusb'
 alias auracle="auracle -C /tmp"
 #alias rstudio="env QT_QPA_PLATFORM=xcb rstudio"
+alias emulator="/opt/android-sdk/emulator/./emulator"
 

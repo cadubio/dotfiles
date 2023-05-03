@@ -45,7 +45,7 @@
 (defpoll updates_total :interval "30m" "scripts/./updates --TOTAL")
 (defpoll updates_aur :interval "30m" "scripts/./updates --AUR")
 
-(defpoll estado :interval "1m" "$HOME/.local/bin/.bateriaCritica.sh")
+;(defpoll estado :interval "1m" "$HOME/.local/bin/.bateriaCritica.sh")
 
 ;; widgets
 
@@ -55,6 +55,7 @@
     (box :vexpand "false" :hexpand "false" :space-evenly "false"
       (button :class "module-wif"
         :onclick "${EWW_CONFIG_DIR}/scripts/./apps --rede"
+        :timeout "3s"
         :style "color: ${COL_WLAN};"
       WLAN_ICON)
       (revealer :transition "slideleft"
@@ -63,6 +64,7 @@
         (button 
           :class "module_essid"
           :onclick "${EWW_CONFIG_DIR}/scripts/./apps --rede"
+          :timeout "3s"
           ESSID_WLAN
         )
       )
@@ -112,7 +114,7 @@
     (label :class "idle-text" :text "dpms")
     (button
       :class {idle_inhibitor ? "system-btn-on" : "system-btn-off"}
-      :onclick "scripts/./idle_inhibi"
+      :onclick "${EWW_CONFIG_DIR}/scripts/./idle_inhibitor toggle"
       :tooltip "Modo Apresentação"
       {idle_inhibitor ? "" : ""}
     )
@@ -124,7 +126,7 @@
     :class "bat_module"
     :vexpand "false" :hexpand "false"
     (circular-progress
-      :value {battery >= 78 ? 100 : battery}
+      :value battery
       :class {battery == 'Charging' ? "batbar_carregada" :
       battery < 15 ? "batbar_critico" :
       battery < 30 ? "batbar_aviso" :
@@ -133,7 +135,7 @@
       :thickness 3
       (button
         :class "batbar_icon"
-        :tooltip "battery on ${battery}%"
+        :tooltip "Bateria: ${battery}%"
         :onclick "scripts/./pop system"
         (label :class "iconbat_text"
           :text {status == 'Discharging' ? "" : "ﲹ"}
@@ -150,7 +152,7 @@
       :thickness 4
       (button
         :class "iconmem"
-        :tooltip "using ${memory}% ram"
+        :tooltip "RAM: ${memory}%"
         :onclick "scripts/./pop system"
         ""
       )
@@ -229,6 +231,13 @@
   )
 )
 
+;(defwidget systray []
+;	(system-tray :class "mod_systray"
+;    :active-only false
+;    :pack-direction "ltr"
+;	)
+;)
+
 (defwidget left []
   (box :orientation "h"
     :space-evenly "false"
@@ -243,8 +252,9 @@
     (volume)
     (wifi)
     (sep)
-    (bat :status {EWW_BATTERY.BAT1.status}
-         :battery {EWW_BATTERY.BAT1.capacity}
+    (bat 
+      :status {EWW_BATTERY.BAT1.status}
+      :battery {EWW_BATTERY.BAT1.capacity}
     )
     (mem)
     (sep)
@@ -421,6 +431,9 @@
         )
       )
     )
+    (box :class "easyeffects" :halign "start" :vexpand "false" :hexpand "false"
+    (button :class "noise_reduct" :timeout "1m" :onclick "easyeffects" "Reduzir ruido")
+    )
   )
 )
 
@@ -498,24 +511,36 @@
 
 (defwidget batCritica [bateria]    
   (box :class "aviso" :orientation "v" :space-evenly "false" 
-    (button :class "bto_batCritica_fechar" :onclick "${EWW_CMD} close bat_critica" "×")
-    (label :text "ATENÇÃO !!!")
-    (box :class "batCritica_icone" :orientation "h" :space-evenly "false" 
+    (box 
+      :class "box_atencao_fechar"
+      :hexpand "true"
+      :halign "fill"
+      :orientation "h"
+      (label :class "txt_atencao" :text " ")
+      (label :class "txt_atencao" :text "ATENÇÃO !!!")    
+      (button :class "bto_fechar_batCritica" :onclick "${EWW_CMD} close bat_critica" "×")
+    )
+    (box 
+         :class "batCritica_icone" 
+         :orientation "h" 
+         :space-evenly "false" 
          :halign "center" 
          :valign "baseline"
-      (circular-progress :value bateria
-        :class "sys_bat"
-        :thickness 9
         (label
           :text ""
-          :class "sys_icon_bat"
+          :class "txt_icon_bat"
           :limit-width 2
           :wrap "false"
         )
+      (label 
+        :class "txt_nivel_critico" 
+        :text "nível crítico ${bateria}%"
       )
-      (label :class "txt_nivel_critico" :text "nível crítico ${bateria}%")
     )
-    (label :text "Conecte o Carregador !!!")
+    (label 
+      :class "txt_conecte_carregador" 
+      :text "Conecte o Carregador !!!"
+    )
   )
 )
 
