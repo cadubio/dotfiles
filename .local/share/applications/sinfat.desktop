@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Sinfat
+GenericName=Sistema de licenciamento integrado do IMA
+Comment=Abrindo o SinFat
+Exec=/usr/bin/chromium "https://sinfat.ima.sc.gov.br"
+Icon=chromium
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
