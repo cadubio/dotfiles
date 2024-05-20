@@ -114,12 +114,12 @@ const Bateria = () =>
   Widget.Box().hook(
     Battery,
     (self) => {
+      self.visible = Battery.available;
       self.class_name =
         Battery.percent <= 12 && !Battery.charging
           ? "battery-box-aviso"
           : "battery-box";
 
-      self.visible = Battery.available;
       self.spacing = 2;
       self.children = [
         Widget.Icon({
@@ -285,22 +285,6 @@ const ram = Variable(0, {
   ],
 });
 
-const swap = Variable(0, {
-  poll: [
-    2000,
-    "free",
-    (out) =>
-      divide(
-        // @ts-ignore
-        out
-          .split("\n")
-          .find((line) => line.includes("Swap:"))
-          .split(/\s+/)
-          .splice(1, 2)
-      ),
-  ],
-});
-
 //'/home/cadu/.config/ags/assets/ram_543279.png'
 const Memory = () =>
   Widget.Box({
@@ -316,40 +300,6 @@ const Memory = () =>
       }),
     ],
   });
-
-  const Swap = () =>
-  Widget.Box({
-    vertical: true,
-    children: [
-      Widget.Label({
-        label: "SWAP",
-        class_name: "ram",
-      }),
-      Widget.Label({
-        class_name: "ram-porc",
-        label: swap.bind().transform((value) => `${value}%`),
-      }),
-    ],
-  });
-
-  const toggleMem = Widget.Stack({
-    children: {
-      "mem": Memory(),
-      "swap": Swap()
-    }
-  })
-
-  const MemUse = () => Widget.EventBox({
-    on_primary_click: () => {
-      if (toggleMem.shown == "mem") {
-        toggleMem.shown = "swap";
-        
-      } else {
-        toggleMem.shown = "mem";
-      }
-    },
-    child: toggleMem
-  })
 
 // Uso da CPU
 const cpu = Variable(0, {
@@ -403,7 +353,7 @@ const raiz = Variable("0%", {
     (out) =>
       out
         .split("\n")
-        .find((el) => el.includes("/dev/sda5"))
+        .find((el) => el.includes("/dev/sdb3"))
         ?.split(/\s+/)[4],
   ],
 });
@@ -494,46 +444,12 @@ const WiredIndicator = () =>
 
 const NetworkIndicator = () =>
   Widget.EventBox({
-    on_primary_click_release: () => execAsync("wofi-wifi-menu"),
+    on_primary_click_release: () => execAsync("networkmanager_dmenu"),
     child: Widget.Stack({
       children: { wifi: WifiIndicator(), wired: WiredIndicator() },
       shown: Network.bind("primary").transform((p) => p || "wifi"),
     }),
   });
-
-const vpnState = Variable(0, {
-  poll: [ 2000, "vpn-state" ]
-
-});
-
-const FortiVpn = () =>
-  Widget.Button({
-    on_primary_click: () => {
-      if (vpnState.getValue() == 0) {
-        execAsync("vpn-ciasc")
-      }
-      else { 
-        execAsync("sudo killall -SIGTERM pppd")
-      }
-    },
-    child: Widget.Label({
-      class_name: vpnState.bind().transform((n) => n == 0 ? "vpn-off" : "vpn-on"),
-      label: "VPN" 
-    }),
-  });
-
-const VpnBox = () =>
-  Widget.Box({
-    spacing: 1,
-    homogeneous: false,
-    vertical: false,
-    class_name: "vpnBox",
-    children: [
-        FortiVpn()
-    ]
-});
-
-// openfortivpn sslvpn01.ciasc.gov.br:443 --cookie=""
 
 /* Atualização de pacotes */
 // pacman
@@ -543,7 +459,7 @@ const Updates = () =>
     setup: (self) =>
       self.poll(600000, (self) =>
         execAsync(["bash", "-c", "checkupdates 2> /dev/null | wc -l"]).then(
-          (nPackages) => (self.label = `${nPackages} 󰏔`)
+          (nPackages) => (self.label = `${nPackages} 💼`)
         )
       ),
   });
@@ -565,8 +481,8 @@ const Packages = () =>
 
 export const dpms = Widget.Stack({
   children: {
-    ligado: Widget.Label("󰨚"),
-    desligado: Widget.Label("󰨙"),
+    "ligado": Widget.Label("󰨚"),
+    "desligado": Widget.Label("󰨙"),
   },
 });
 
@@ -582,7 +498,7 @@ const Dpms = () =>
       }),
       Widget.Button({
         on_primary_click_release: () =>
-          Hyprland.message("dispatch dpms toggle"), //execAsync(`bash -c "${App.configDir}/scripts/idle_inhibitor toggle"`),
+          execAsync(`bash -c "${App.configDir}/scripts/idle_inhibitor toggle"`),
         child: dpms,
         setup: (self) =>
           self.bind("class_name", dpms, "shown", (estado) =>
@@ -591,10 +507,6 @@ const Dpms = () =>
       }),
     ],
   });
-
-// const ip = Variable("", {
-//   listen: ["bash", "-c", "openfortivpn-webview --url 'https://sslvpn01.ciasc.gov.br:443/remote/saml/start?realm=ima'"]
-// })
 
 // Menus
 const Left = () =>
@@ -614,16 +526,15 @@ const Right = () =>
     hpack: "end",
     spacing: 8,
     children: [
-      VpnBox(),
       Packages(),
       Dpms(),
-      Brightness(),
+      // Brightness(),
       NetworkIndicator(),
       AudioControl(),
       DiscUse(),
       Cpu(),
-      MemUse(),
-      Bateria(),
+      Memory(),
+      // Bateria(),
       Calendario(),
     ],
   });
