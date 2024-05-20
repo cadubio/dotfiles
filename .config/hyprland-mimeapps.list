@@ -1,0 +1,7 @@
+[Default Applications]
+image/png=mvi.desktop
+text/plain=featherpad.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop
+image/jpeg=mvi.desktop
+application/x-shellscript=featherpad.desktop
+text/csv=libreoffice-calc.desktop
