@@ -1,3 +1,5 @@
+Original repo [mpv-image-viewer](https://github.com/occivink/mpv-image-viewer)
+
 This repository aggregates configurations, scripts and tips for using [mpv](https://github.com/mpv-player/mpv) as an image viewer. The affectionate nickname `mvi` is given to mpv in such case.
 
 This README assumes basic familiarity with mpv and its configuration. The information here should be platform-agnostic for the most part.
