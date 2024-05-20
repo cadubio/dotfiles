@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=mvi
-GenericName=MPV Image viewer
-GenericName[en_US]=MPV Image viewer
-Comment=MPV as an image viewer
-Exec=mvi %F
+GenericName=mpv Image viewer
+GenericName[en_US]=mpv Image viewer
+Comment=mpv as an image viewer
+Exec=mpv --config-dir=$HOME/.config/mpv-image-viewer
 NoDisplay=true
 Terminal=false
 Type=Application
