@@ -1,0 +1,17 @@
+options(radian.color_scheme = "native")
+options(radian.indent_lines = TRUE)
+options(radian.auto_match = TRUE)
+options(radian.auto_suggest = FALSE)
+options(radian.highlight_matching_bracket = FALSE)
+options(radian.auto_indentation = TRUE)
+options(radian.tab_size = 4)
+options(radian.complete_while_typing = TRUE)
+options(radian.completion_prefix_length = 2)
+options(radian.completion_timeout = 0.05)
+options(radian.auto_width = TRUE)
+options(radian.insert_new_line = TRUE)
+options(radian.history_size = 20000)
+options(radian.global_history_file = "~/.radian_history")
+options(radian.history_search_ignore_case = FALSE)
+
+
