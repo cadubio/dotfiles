@@ -1,0 +1,14 @@
+#! /bin/bash
+
+openfortivpn-webview --url 'https://sslvpn01.ciasc.gov.br:443/remote/saml/start?realm=ima' > /tmp/stdout-stderr.$$
+
+if grep "SVPNCOOKIE" /tmp/stdout-stderr.$$; then
+	cookie=$(grep "SVPNCOOKIE" /tmp/stdout-stderr.$$ | cut -b 12- )
+	
+	sudo openfortivpn sslvpn01.ciasc.gov.br:443 --cookie="$cookie"
+
+	echo "VPN CIASC: Conectada!"
+else
+	echo "VPN CIASC: Erro ao Connectar!"
+fi
+
