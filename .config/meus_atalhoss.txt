@@ -1,0 +1,21 @@
+ + ESPAÇO: Flutuar/Fixar Janelas
+ + Q: Abre o terminal
+ + SHIFT + C: Mata Janela em foco 
+ + N: abre o Firefox
+ + V: Histórico de Cópias
+ + D: Menu de Aplicativos
+ + P: pseudo, # dwindle
+ + J: togglesplit, # dwindle
+ + G: togglegroup, #dwindle
+ + F: Gerenciador de Arquivos
+F7: Monitores
+ + C: Calculadora
+ + Z: Zoom e Seletor de cores
+ + T: Gerenciador de Tarefas (todofi.sh)
+ + SHIFT + 8: Buscador de Arquivos, Pastas 
+ + SHIFT + G, Gravador de tela (vídeo)
+CTRL + SHIFT + BACKSPACE: Mata o Gravador de Tela (wf-recorder)
+ + SHIFT + F: Captura de tela
+ + W: Tela Cheia
+PrintSc: Copia a tela com o Applicativo Satty
+CTRL + SHIFT + PrintSc: Copia instantânea da(s) tela(s)
