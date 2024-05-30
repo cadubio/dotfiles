@@ -1,21 +1,30 @@
- + ESPAÇO: Flutuar/Fixar Janelas
- + Q: Abre o terminal
- + SHIFT + C: Mata Janela em foco 
- + N: abre o Firefox
- + V: Histórico de Cópias
- + D: Menu de Aplicativos
- + P: pseudo, # dwindle
- + J: togglesplit, # dwindle
- + G: togglegroup, #dwindle
- + F: Gerenciador de Arquivos
-F7: Monitores
- + C: Calculadora
- + Z: Zoom e Seletor de cores
- + T: Gerenciador de Tarefas (todofi.sh)
- + SHIFT + 8: Buscador de Arquivos, Pastas 
- + SHIFT + G, Gravador de tela (vídeo)
-CTRL + SHIFT + BACKSPACE: Mata o Gravador de Tela (wf-recorder)
- + SHIFT + F: Captura de tela
- + W: Tela Cheia
-PrintSc: Copia a tela com o Applicativo Satty
-CTRL + SHIFT + PrintSc: Copia instantânea da(s) tela(s)
+	------- Área de Trabalho --------
+ + <span color='red'>ESPAÇO</span>: Flutuar/Fixar Janelas
+ + <span color='red'>SHIFT</span> + <span color='red'>C</span>: Mata Janela em foco 
+ + <span color='red'>P</span>: pseudo, # dwindle
+ + <span color='red'>J</span>: togglesplit, # dwindle
+ + <span color='red'>G</span>: togglegroup, #dwindle
+ + <span color='red'>W</span>: Tela Cheia
+
+	------- Aplicativos ------------
+ + <span color='red'>C</span>: Calculadora
+ + <span color='red'>F</span>: Gerenciador de Arquivos
+ + <span color='red'>SHIFT</span> + <span color='red'>F</span>: Procurar por Arquivos ou Pastas 
+ + <span color='red'>Q</span>: Terminal
+ + <span color='red'>N</span>: Firefox
+ + <span color='red'>V</span>: Histórico de Cópias
+ + <span color='red'>D</span>: Menu de Aplicativos
+ + <span color='red'>Z</span>: Zoom e Seletor de cores
+ + <span color='red'>T</span>: Gerenciador de Afazeres, Tarefas (todofi.sh)
+ + <span color='red'>SHIFT</span> + <span color='red'>F</span>: Procurar de Arquivos, Pastas 
+
+	------ Configurar -------------
+<span color='red'>F7</span>: Monitores
+
+	------ Capturas ---------------
+ + <span color='red'>PrintSc</span>: Captura a tela com Flameshot
+<span color='red'>PrintSc</span>: Captura a tela com Satty
+<span color='red'>CTRL</span> + <span color='red'>SHIFT</span> + <span color='red'>PrintSc</span>: Copia instantânea da(s) tela(s)
+<span color='red'>SHIFT</span> + <span color='red'>PrintSc</span>: Seleciona parte da tela para copiar
+ + <span color='red'>SHIFT</span> + <span color='red'>G</span>: Gravador de tela (wf-recorder)
+<span color='red'>CTRL</span> + <span color='red'>SHIFT</span> + <span color='red'>BACKSPACE</span>: Mata o Gravador de Tela (wf-recorder)
