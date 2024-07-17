@@ -1,14 +1,15 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=mvi
-GenericName=mpv Image viewer
+GenericName=Image viewer
 Comment=mpv as an image viewer
-Exec=mpv --config-dir=$HOME/.config/mpv-image-viewer %F
+Exec=mpv --config-dir=/home/cadu/.config/mpv-image-viewer/ %f
 NoDisplay=true
 Terminal=false
 Type=Application
 Categories=Graphics;2DGraphics;Viewer;
-MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-bmp;image/x-pcx;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-tga;image/x-xbitmap;image/heif;image/avif
-Icon=multimedia-photo-viewer
+MimeType=inode/directory;image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;image/x-bmp;image/x-pcx;image/x-png;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-tga;image/x-xbitmap;image/heif;image/avif
+Icon=mpv
 Keywords=photo;picture;
-Name[pt_BR]=mvi.desktop
+Name[pt_BR]=mvi
 

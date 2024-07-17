@@ -3,8 +3,9 @@ import = [
 ]
 
 [window]
-opacity = 0.8
+opacity = 0.0
+startup_mode = "Windowed"
 
-  [window.dimensions]
-  columns = 75
-  lines = 15
+[window.dimensions]
+columns = 75
+lines = 15

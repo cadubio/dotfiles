@@ -494,7 +494,7 @@ const WiredIndicator = () =>
 
 const NetworkIndicator = () =>
   Widget.EventBox({
-    on_primary_click_release: () => execAsync("wofi-wifi-menu"),
+    on_primary_click_release: () => execAsync("rofi-wifi-menu"),
     child: Widget.Stack({
       children: { wifi: WifiIndicator(), wired: WiredIndicator() },
       shown: Network.bind("primary").transform((p) => p || "wifi"),
