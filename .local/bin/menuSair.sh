@@ -4,10 +4,12 @@ function handle {
   if [[ ${1:0:6} == "submap" ]]; then
     if [[ ${1:8:4} == "sair" ]]; then
       # eww --config $HOME/.config/eww open desliga
-      ags --bus-name powerMenu --config "$HOME/.config/ags/windows/power_menu.js"
+      # agsv1 --bus-name powerMenu --config "$HOME/.config/agsv1/windows/power_menu.js"
+      PowerMenu
     else
       # eww --config $HOME/.config/eww close desliga
-      ags --bus-name powerMenu --quit
+      # agsv1 --bus-name powerMenu --quit
+      ags quit --instance powerMenuInst
     fi
   fi 
 }
