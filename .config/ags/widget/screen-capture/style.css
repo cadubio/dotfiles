@@ -1,0 +1,38 @@
+/* css */ 
+window {
+    all: unset;
+    background-color: alpha(black, 0.3);
+}
+
+window > box {
+    margin: 10px;
+    padding: 12px;
+    box-shadow: 2px 3px 5px 0 alpha(black, 0.6);
+    border-radius: 11px;
+    border-color: alpha(white, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #181818;
+    color: white;
+    min-width: 200px;
+}
+
+  box > label {
+      font-size: large;
+      margin: 6px;
+    }
+    
+    box > button {
+        margin: 6px;
+    }
+    
+   .audioLAbel {
+    font-size: smaller;
+  }
+
+  .CloseScreenCapture .close-capture{
+    min-width: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
