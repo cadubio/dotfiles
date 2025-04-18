@@ -5,11 +5,11 @@ function handle {
     if [[ ${1:8:4} == "sair" ]]; then
       # eww --config $HOME/.config/eww open desliga
       # agsv1 --bus-name powerMenu --config "$HOME/.config/agsv1/windows/power_menu.js"
-      PowerMenu
+      uwsm app -- gjs --module $HOME/.config/ags/widget/PowerMenu.js
     else
       # eww --config $HOME/.config/eww close desliga
       # agsv1 --bus-name powerMenu --quit
-      ags quit --instance powerMenuInst
+      uwsm app -- ags quit --instance powerMenuInst
     fi
   fi 
 }

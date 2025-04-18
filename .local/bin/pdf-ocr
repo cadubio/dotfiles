@@ -1,7 +1,7 @@
 #!/bin/bash
-TMPD=`mktemp -d`
-DATUAL=`pwd`
-cd $TMPD
+TMPD=$(mktemp -d)
+DATUAL=$(pwd)
+cd "$TMPD" || exit
 echo -n "Criando imagens em $TMPD ... ";
 pdftoppm -r 300 "$DATUAL/$2" temp
 echo "feito!"
@@ -13,8 +13,8 @@ for f in *.ppm; do
 done
 
 echo -n "Criando PDF pesquisável ... "
-cd "$DATUAL"
-pdftk $TMPD/*.pdf cat output out.pdf
+cd "$DATUAL" || exit
+pdftk "$TMPD"/*.pdf cat output out.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile="${2%.pdf}_novo.pdf" out.pdf
 echo "feito!"
 echo -n "Removendo temporários de $TMPD ... ";
@@ -22,4 +22,4 @@ rm -rf $TMPD
 rm -f  out.pdf
 echo "feito!"
 echo ""
-echo " Arquivo criado:" ${2%.pdf}"_novo.pdf"
+echo " Arquivo criado:" "${2%.pdf}""_novo.pdf"

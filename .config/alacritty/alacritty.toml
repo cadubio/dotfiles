@@ -1,6 +1,6 @@
 
 [window]
-opacity = 0.0
+opacity = 0.8
 startup_mode = "Windowed"
 
 [window.dimensions]

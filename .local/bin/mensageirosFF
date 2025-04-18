@@ -1,4 +1,4 @@
 #!/bin/bash
-hyprctl dispatch -- exec firefox --new-instance -P mensageiros "https://web.whatsapp.com/" "https://web.telegram.org/z/" 
+hyprctl dispatch -- exec uwsm app -- firefox --kiosk --new-instance -P mensageiros "https://web.whatsapp.com/" "https://web.telegram.org/z/" 
 #hyprctl dispatch movetoworkspace "special,class:^(firefox)$"
 #hyprctl dispatch workspace "unset,class:^(firefox)$"

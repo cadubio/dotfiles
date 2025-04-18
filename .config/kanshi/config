@@ -3,17 +3,17 @@ profile padrao {
 }
 
 profile HDMI {
-	output eDP-1 mode 1366x768 position 328,1080
+	output eDP-1 mode 1366x768 position 1920,156
 	output HDMI-A-2 mode 1920x1080 position 0,0
 }
 
 profile DP_HDMI {
-	output DP-1 mode 1920x1080 position 0,198	
-	output HDMI-A-2 mode 1920x1080 position 1280,0
-	output eDP-1 mode 1366x768 position 1560,1080
+	output DP-1 mode 1920x1080 position 1920,0	
+	output eDP-1 mode 1366x768 position 1920,720
+	output HDMI-A-2 mode 1920x1080 position 0,204
 }
 
 profile DP {
-	output DP-1 mode 1920x1080 position 0,0
-	output eDP-1 mode 1366x768 position 1280,0
+	output DP-1 mode 1920x1080 position 43,0
+	output eDP-1 mode 1366x768 position 0,0
 }

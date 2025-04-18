@@ -3,21 +3,22 @@ typeset -U PATH path
 path+=($HOME/.pub-cache/bin /home/cadu/fvm/default/bin )
 
 path=("$HOME/.local/bin" "$path[@]")
+export UWSM_USE_SESSION_SLICE=true
 #export WAYLAND_DEBUG=1
 #export WAYLAND_DISPLAY=1
 #
-export GDK_BACKEND="wayland"
-export XDG_CURRENT_DESKTOP=Hyprland
-export XDG_SESSION_TYPE=wayland
-export XDG_SESSEIO_DESKTOP=Hyprland
-export XDG_CONFIG_HOME=/home/cadu/.config
-export LIBSEAT_BACKEND=logind
+# export GDK_BACKEND="wayland"
+# export XDG_CURRENT_DESKTOP=Hyprland
+# export XDG_SESSION_TYPE=wayland
+# export XDG_SESSEIO_DESKTOP=Hyprland
+# export XDG_CONFIG_HOME=/home/cadu/.config
+# export LIBSEAT_BACKEND=logind
 #
-export QT_QPA_PLATFORM="wayland;xcb"
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export QT_QPA_PLATFORMTHEME=qt5ct
-#export QT_SCALE_FACTOR=1
+# export QT_QPA_PLATFORM="wayland;xcb"
+# export QT_AUTO_SCREEN_SCALE_FACTOR=1
+# export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+# export QT_QPA_PLATFORMTHEME=qt5ct
+
 #
 #export ANDROID_SDK_ROOT=/opt/android-sdk
 export ANDROID_AVD_ROOT=/home/cadu/.android/avd
