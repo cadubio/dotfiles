@@ -1,0 +1,36 @@
+#!/bin/bash
+
+trap exit 0 SIGINT SIGTERM
+
+loop() {
+    while true; do
+        systemd-inhibit --why="Turn off DPMS" sleep 1h || break
+    done
+}
+
+#$echo ${BASH_SOURCE[0]}
+#echo $$
+
+script_name=${BASH_SOURCE[0]}
+
+case $1 in
+"toggle")
+    if pgrep -f "$script_name" | grep -v "$$" > /dev/null; then
+        echo 'stop inhibiting'
+        
+        for pid in $(pgrep -f "$script_name"); do
+            if [ "$pid" != $$ ]; then
+                #echo $pid
+                pkill -P "$pid"
+            fi 
+        done
+        
+        # ags -r "dpms.shown = 'ligado'"
+        exit 0
+    else 
+        echo 'inhibiting'
+        loop &
+        # ags -r "dpms.shown = 'desligado'"
+    fi
+;;
+esac
