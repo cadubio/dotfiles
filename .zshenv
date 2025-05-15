@@ -1,6 +1,6 @@
 typeset -U PATH path
 #path+=($HOME/Android/flutter/bin $HOME/.pub-cache/bin)
-path+=($HOME/.pub-cache/bin /home/cadu/fvm/default/bin )
+path+=($HOME/.pub-cache/bin /home/cadu/fvm/default/bin /opt/android-sdk/cmdline-tools/latest/bin /opt/android-sdk/emulator /opt/android-sdk/platform-tools )
 
 path=("$HOME/.local/bin" "$path[@]")
 export UWSM_USE_SESSION_SLICE=true
@@ -22,7 +22,7 @@ export UWSM_USE_SESSION_SLICE=true
 #
 #export ANDROID_SDK_ROOT=/opt/android-sdk
 export ANDROID_AVD_ROOT=/home/cadu/.android/avd
-export ANDROID_SDK_HOME=/home/cadu
+export ANDROID_SDK_HOME=/opt/android-sdk
 export ANDROID_HOME=/opt/android-sdk
 export _JAVA_AWT_WM_NONEREPARENTING=1
 #
