@@ -1,20 +1,13 @@
-#!/usr/bin/gjs -m
+import app from "ags/gtk4/app"
+import style from "./system_style.scss"
+import Bar from "./widget/System_Bar"
 
-import { App } from "astal/gtk3";
-import style from "./style.scss";
-import Bar from "./widget/Bar";
-import NotificationPopups from "./widget/notifications/NotificationPopups";
-
-
-App.add_icons("/home/cadu/.config/ags/widget/img")
-
-App.start({
+app.start({
+  instanceName: "System-Bar",
+  gtkTheme: "Adwaita-dark",
+  iconTheme: "Adwaita",
   css: style,
-  gtkTheme: "Arc-Dark",
-  instanceName: "AppBarAndNotification",
-  main: () => App.get_monitors().map((m) => {
-    Bar(m)
-    NotificationPopups()
-
-  }),
-});
+  main() {
+    app.get_monitors().map(Bar)
+  },
+})

@@ -1,2 +1,2 @@
 #! /bin/bash
-xfreerdp /monitors:0 /multimon /v:172.26.75.197 /u:carlossiqueira /p:Spigelia54
+xfreerdp /monitors:0 /multimon /v:172.26.75.181 /u:carlossiqueira /p:Spigelia54

@@ -1,9 +1,9 @@
-import { App } from "astal/gtk3";
-import { bind } from "astal";
-import { Astal, Gtk, Gdk } from "astal/gtk3";
-import { execAsync } from "astal";
+import app from "ags/gtk4/app";
+import { createBinding, For } from "ags";
+import { Astal, Gtk, Gdk } from "ags/gtk4";
+import { execAsync } from "ags/process";
 import Hyprland from "gi://AstalHyprland";
-import MyCheckButton from "./CheckButton"
+import MyCheckButton from "./CheckButton";
 
 export default function OpenScreenCapture() {
   const anchor =
@@ -13,17 +13,11 @@ export default function OpenScreenCapture() {
     Astal.WindowAnchor.RIGHT;
   const { CENTER, END } = Gtk.Align;
   const hypr = Hyprland.get_default();
-  const recAudio = <MyCheckButton></MyCheckButton>
+  const recAudio = <MyCheckButton />
   
    
   function hide() {
-    App.quit();
-  }
-
-  function onKeyPress(_: Astal.Window, event: Gdk.Event) {
-    if (event.get_keyval()[1] === Gdk.KEY_Escape) {
-      hide();
-    }
+    app.quit();
   }
 
   function isActive(monitor: string, audio: boolean) {
@@ -46,37 +40,48 @@ export default function OpenScreenCapture() {
         .then((out) => console.log(out))
         .catch((err) => console.log(err));
     }
-    App.toggle_window("openScreenCapture");
-    App.toggle_window("closeScreenCapture");
+    app.toggle_window("openScreenCapture");
+    app.toggle_window("closeScreenCapture");
   }
+
+  const monitores = createBinding(hypr, "monitors");
 
   return (
     <window
+      visible
       name="openScreenCapture"
-      application={App}
-      className="OpenScreenCapture"
+      application={app}
+      class="OpenScreenCapture"
       exclusivity={Astal.Exclusivity.IGNORE}
       anchor={anchor}
       keymode={Astal.Keymode.ON_DEMAND}
-      onKeyReleaseEvent={onKeyPress}
     >
-      <box halign={CENTER} valign={CENTER} vertical>
+    <Gtk.EventControllerKey
+        onKeyPressed={({ }, keyval: number) => {
+          if (keyval === Gdk.KEY_Escape) {
+            app.quit()
+          }
+        }}
+      />
+      <box halign={CENTER} valign={CENTER} orientation={Gtk.Orientation.VERTICAL}>
         <box halign={CENTER}>
           <label label="Selecione o monitor" />
         </box>
         <box halign={END}>
-            {recAudio}
+            <MyCheckButton />
         </box>
         <box>
-          {bind(hypr, "monitors").as((ms) =>
-            ms.map((monitor) => (
-              <button onClicked={() => isActive(`${monitor.name}`, recAudio.active)}>
+        <For each={monitores}>
+          {
+            (monitor) => (
+              <button onClicked={() => isActive(`${monitor.name}`, recAudio.get_property("active", Boolean))}>
                 <label label={`${monitor.name}`} />
               </button>
-            ))
-          )}
+            )
+          }
+        </For>
         </box>
       </box>
     </window>
-  );
+  )
 }

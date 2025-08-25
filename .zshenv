@@ -3,7 +3,7 @@ typeset -U PATH path
 path+=($HOME/.pub-cache/bin /home/cadu/fvm/default/bin /opt/android-sdk/cmdline-tools/latest/bin /opt/android-sdk/emulator /opt/android-sdk/platform-tools )
 
 path=("$HOME/.local/bin" "$path[@]")
-export UWSM_USE_SESSION_SLICE=true
+#export UWSM_USE_SESSION_SLICE=true
 #export WAYLAND_DEBUG=1
 #export WAYLAND_DISPLAY=1
 #
@@ -18,9 +18,8 @@ export UWSM_USE_SESSION_SLICE=true
 # export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 # export QT_QPA_PLATFORMTHEME=qt5ct
-
-#
 #export ANDROID_SDK_ROOT=/opt/android-sdk
+export HYPRSHOT_DIR=/home/cadu/captura
 export ANDROID_AVD_ROOT=/home/cadu/.android/avd
 export ANDROID_SDK_HOME=/opt/android-sdk
 export ANDROID_HOME=/opt/android-sdk

@@ -1,7 +1,8 @@
-import GObject, { register, property } from "astal/gobject";
-import { monitorFile, readFileAsync } from "astal/file";
-import { exec, execAsync, bind } from "astal";
-import { Gtk } from "astal/gtk3";
+import GObject, { register, property } from "ags/gobject";
+import { monitorFile, readFileAsync } from "ags/file";
+import { exec, execAsync } from "ags/process";
+//import { createBinding } from "ags";
+//import { Gtk } from "ags/gtk4";
 
 const get = (args: string) => Number(exec(`brightnessctl ${args}`));
 const screen = exec(`bash -c "ls -w1 /sys/class/backlight | head -1"`);
@@ -21,7 +22,7 @@ export default class Brightness extends GObject.Object {
   #screenMax = get("max");
   #screen = get("get") / (get("max") || 1);
 
-  @property(Number)
+
   get kbd() {
     return this.#kbd;
   }
@@ -35,7 +36,7 @@ export default class Brightness extends GObject.Object {
     });
   }
 
-  @property(Number)
+  
   get screen() {
     return this.#screen;
   }

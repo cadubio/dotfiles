@@ -37,6 +37,7 @@ x-scheme-handler/tg=userapp-Telegram Desktop-U5FDE1.desktop;
 x-scheme-handler/webcal=userapp-Thunderbird-DXI1G1.desktop;
 x-scheme-handler/webcals=userapp-Thunderbird-DXI1G1.desktop;
 application/zip=org.gnome.FileRoller.desktop;featherpad.desktop;
+text/markdown=featherpad.desktop;
 
 [Default Applications]
 /home/cadu/.local/share/applications/mvi.desktop=/home/cadu/.local/share/applications/mvi.desktop
@@ -89,3 +90,5 @@ x-scheme-handler/snews=userapp-Thunderbird-ZQ02G1.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-U5FDE1.desktop
 x-scheme-handler/webcal=userapp-Thunderbird-DXI1G1.desktop
 x-scheme-handler/webcals=userapp-Thunderbird-DXI1G1.desktop
+application/x-shellscript=featherpad.desktop
+text/markdown=featherpad.desktop

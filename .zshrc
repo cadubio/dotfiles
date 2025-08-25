@@ -35,3 +35,8 @@ if [ -f '/home/cadu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/cadu/google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/cadu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/cadu/google-cloud-sdk/completion.zsh.inc'; fi
+
+if [[ -n $PS1 ]]; then
+  eval $(keychain --eval id_rsa)
+fi
+
