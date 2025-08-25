@@ -1,0 +1,23 @@
+#!/bin/bash
+cd "/tmp" || exit
+
+rm -f "aur-pkgs-libastal"
+
+auracle search libastal|grep installed|cut -d"/" -f 2 - | cut -d" " -f 1 - >> aur-pkgs-libastal
+
+while read pkg;  do
+  if [ -d "/tmp/$pkg" ]; then
+    echo "/tmp/$pkg existe."
+  else  
+    auracle clone "$pkg"
+    sleep 1
+  fi
+done <aur-pkgs-libastal
+
+for pkg in libastal-*; do
+  echo "Instalando pacote $pkg";
+  cd "/tmp/$pkg" || exit
+  makepkg --noconfirm --install --rmdeps --syncdeps
+  echo "Feito"
+done
+
