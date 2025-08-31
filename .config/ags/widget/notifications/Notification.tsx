@@ -1,5 +1,4 @@
-import Gtk from "gi://Gtk?version=4.0"
-import Gdk from "gi://Gdk?version=4.0"
+import { Gtk, Gdk } from "ags/gtk4"
 import Adw from "gi://Adw"
 import GLib from "gi://GLib"
 import AstalNotifd from "gi://AstalNotifd"
