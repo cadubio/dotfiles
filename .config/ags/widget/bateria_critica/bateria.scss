@@ -1,0 +1,43 @@
+@use "sass:string";
+
+@function gtkalpha($c, $a) {
+    @return string.unquote("alpha(#{$c},#{$a})");
+}
+
+// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+$fg-color: #{"@theme_fg_color"};
+$bg-color: #{"@theme_bg_color"};
+$error: red;
+
+window.BateriaCritica {
+    * {
+        all: unset;
+        background-color: gtkalpha($bg-color, 0.3);
+    }
+
+    >box {
+        margin: 10px;
+        padding: 30px;
+        box-shadow: 2px 3px 5px 0 gtkalpha(black, 0.6);
+        border-radius: 11px;
+        border-color: gtkalpha($fg-color, 0.8);
+        border-style: solid;
+        border-width: 1px;
+        background-color: $bg-color;
+        color: $fg-color;
+        min-width: 200px;
+    }
+    
+    box > label {
+        font-size: large;
+        margin: 6px;
+    }
+
+    label.atencao {
+        color: #F5F539;
+    }
+    label.perigo {
+        color: #FF0000;
+        font-weight: bold;
+    }
+}
