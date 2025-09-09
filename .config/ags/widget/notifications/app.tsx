@@ -1,6 +1,6 @@
 import app from "ags/gtk4/app"
 import style from "./style.scss"
-import NotificationPopups from "./NotificationPopups2"
+import NotificationPopups from "./NotificationPopupsComTimeout"
 
 app.start({
   instanceName: "System-Notification",
